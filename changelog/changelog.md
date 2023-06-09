@@ -1,5 +1,49 @@
 # Changelog
 
+## v0.22.1 - Jun 1, 2023
+
+**Improvement**
+
+-   Fixed the ipyleaflet SplitControl bug (#1550)
+-   Added decimals param for Inspector GUI (#1548)
+-   Added decimals param for Inspector GUI (#1548)
+-   Add opened param for tool template (#1546)
+-   Updated SciPy notebook (#1545)
+
+## v0.22.0 - May 29, 2023
+
+**New Features**
+
+-   Added `Map.add_inspector()` method (#1544)
+-   Added `Map.add_layer_manager()` method (#1544)
+
+**Improvement**
+
+-   Simplified the geemap module (#1544)
+-   Deprecated the heremap module (#1543)
+
+## v0.21.0 - May 29, 2023
+
+**New Features**
+
+-   Added support for Solara (#1541)
+-   Added segmentation notebook (#1539)
+-   Added SciPy workshop notebook (#1538)
+
+## v0.20.7 - May 16, 2023
+
+**New Features**
+
+-   Added ee_to_geotiff function (#1519)
+-   Added netlify deployment for pull requests (#1516)
+
+**Improvement**
+
+-   Added ee.data.setUserAgent (#1535)
+-   Fixed dimensions in timelapse module not accepting number pairs (#1534)
+-   Fixed ArcGIS add layer bug (#1518)
+-   Fixed for faulty exception handling when request.get raises an exception
+
 ## v0.20.6 - Apr 18, 2023
 
 **New Features**
@@ -12,6 +56,7 @@
 -   Fixed ee.Geometry visualization bug (#1495)
 -   Fixed plotly import error
 -   Updated docker image url
+
 ## v0.20.5 - Apr 6, 2023
 
 **Improvement**
