@@ -1,5 +1,146 @@
 # Changelog
 
+## v0.26.0 - Sep 6, 2023
+
+**What's Changed**
+
+-   Add installation CI by @giswqs in [#1656](https://github.com/gee-community/geemap/pull/1656)
+-   Fix vis control error by @giswqs in [#1660](https://github.com/gee-community/geemap/pull/1660)
+-   Fix plotly notebook typo by @giswqs in [#1661](https://github.com/gee-community/geemap/pull/1661)
+-   Refactor inspector into an ipywidgets subclass by @naschmitz in [#1663](https://github.com/gee-community/geemap/pull/1663)
+-   Refactor toolbar into an ipywidgets subclass by @bengalin in [#1664](https://github.com/gee-community/geemap/pull/1664)
+-   Fix computation for number of rows in toolbar by @bengalin in [#1665](https://github.com/gee-community/geemap/pull/1665)
+-   Update pepy badge by @giswqs in [#1668](https://github.com/gee-community/geemap/pull/1668)
+-   Defines an AbstractDrawControl and implementation for the current draw control features. by @sufyanAbbasi in [#1666](https://github.com/gee-community/geemap/pull/1666)
+-   Restore dragging mode after existing split map mode by @kirimaru-jp in [#1669](https://github.com/gee-community/geemap/pull/1669)
+-   Remove trailing spaces by @schwehr in [#1673](https://github.com/gee-community/geemap/pull/1673)
+-   Clean up docs folder by @schwehr in [#1672](https://github.com/gee-community/geemap/pull/1672)
+-   Clean up docs folder by @giswqs in [#1675](https://github.com/gee-community/geemap/pull/1675)
+-   Refactor layer manager into an ipywidgets subclass by @naschmitz in [#1671](https://github.com/gee-community/geemap/pull/1671)
+-   Add unit tests for draw control by @sufyanAbbasi in [#1674](https://github.com/gee-community/geemap/pull/1674)
+-   Add G4G workshop notebook by @giswqs in [#1676](https://github.com/gee-community/geemap/pull/1676)
+-   Add NLCD 2021 basemap by @giswqs in [#1680](https://github.com/gee-community/geemap/pull/1680)
+-   Clean up layer management ivars. by @naschmitz in [#1684](https://github.com/gee-community/geemap/pull/1684)
+-   Refactor basemap into an ipywidgets subclass by @bengalin in [#1685](https://github.com/gee-community/geemap/pull/1685)
+-   Fix layer visualization GUI bug by @giswqs in [#1687](https://github.com/gee-community/geemap/pull/1687)
+-   Add City+ conference workshop notebook by @giswqs in [#1688](https://github.com/gee-community/geemap/pull/1688)
+-   Remove Google basemaps by @giswqs in [#1681](https://github.com/gee-community/geemap/pull/1681)
+
+**New Contributors**
+
+-   @bengalin made their first contribution in [#1664](https://github.com/gee-community/geemap/pull/1664)
+-   @sufyanAbbasi made their first contribution in [#1666](https://github.com/gee-community/geemap/pull/1666)
+-   @kirimaru-jp made their first contribution in [#1669](https://github.com/gee-community/geemap/pull/1669)
+-   @schwehr made their first contribution in [#1673](https://github.com/gee-community/geemap/pull/1673)
+
+**Full Changelog**: [v0.25.0...v0.26.0](https://github.com/gee-community/geemap/compare/v0.25.0...v0.26.0)
+
+## v0.25.0 - Jul 30, 2023
+
+**Improvement**
+
+-   Refactor colorbar into an ipywidgets subclass (#1640)
+-   Fixed PIL import error on Windows (#1649)
+-   Added codes to 114_dynamic_world.ipynb
+-   Added book release (#1645)
+-   Updated installation.md (#1643)
+-   Improved Sentinel-2 timelapse function (#1635)
+-   Fixed Sentinel-2 timelapse bug (#1633)
+
+**Contributors**
+
+@eocce @giswqs @naschmitz @osgeokr
+
+## v0.24.4 - Jul 17, 2023
+
+**Improvement**
+
+-   Fixed timelapse bug (#1631)
+-   Fixed typo (#1630)
+
+## v0.24.3 - Jul 11, 2023
+
+**Improvement**
+
+-   Set Output widget max width (#1626)
+
+## v0.24.2 - Jul 10, 2023
+
+**Improvement**
+
+-   Fixed colorbar width bug (#1624)
+-   Fixed stac layer expression bug (#1623)
+-   Added support for transparent legend (#1622)
+-   Auto copy js-py converted code to clipboard (#1621)
+-   Removed vis_params attribute from TileLayer (#1619)
+-   Dynamic latitude in map scale calc (#1618)
+
+## v0.24.1 - Jul 6, 2023
+
+**Improvement**
+
+-   Removed two unused variables (#1615)
+-   Fixed vis_param palette validation (#1613)
+-   Added a collapsible option for legends (#1612)
+-   Added show and opacity options for styled vector (#1610)
+
+## v0.24.0 - Jul 6, 2023
+
+**New Features**
+
+-   Split modules into core and extra features (#1601)
+-   Made toolbar customizable (#1599)
+-   Simplified geemap Map class (#1598)
+-   Added markers with custom shape and color (#1595)
+
+**Improvement**
+
+-   Updated SciPy workshop notebook and fixed bugs (#1607)
+-   Updated SciPy workshop notebook (#1608)
+-   Fix ipywidget Output widget bug (#1597)
+-   Refactor xyz_to_leaflet and tests (#1592)
+-   Removed old glob tag \_X from notebook nav path (#1594)
+-   Updated ArcGIS instructions (#1593)
+-   Refactored leaflet and folium tile layers (#1567)
+-   Refactored get_xyz_dict and added tests (#1588)
+
+## v0.23.2 - Jun 28, 2023
+
+**Improvement**
+
+-   Improve exception handling (#1587)
+-   Fixed function typo
+
+## v0.23.1 - Jun 24, 2023
+
+**New Features**
+
+-   Added create_grid function for zonal stats (#1582)
+
+**Improvement**
+
+-   Fixed toolbar GUI bug (#1584)
+
+## v0.23.0 - Jun 22, 2023
+
+**Improvement**
+
+-   Separated ee plot gui from the Map class (#1576)
+-   Separated toolbar GUI from Map class (#1575)
+-   Improved Map.add_netcdf method (#1574)
+-   Suppress gdal open raster warning (#1573)
+-   Improved Map.add_raster method (#1572)
+-   Fixed js-py conversion bug (#1571)
+-   Used sorted function instead of if statements (#1569)
+-   Added support for downloading images in parallel (#1564)
+-   Improved ee_initialize function (#1563)
+-   Added typehinting function parameter for better clarity (#1555)
+-   Updated layer manager GUI (#1553)
+
+**Contributors**
+
+@slowy07
+
 ## v0.22.1 - Jun 1, 2023
 
 **Improvement**

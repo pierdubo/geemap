@@ -5,7 +5,7 @@
 [![Open In Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/gee-community/geemap/blob/master/examples/notebooks/00_geemap_key_features.ipynb)
 [![image](https://img.shields.io/pypi/v/geemap.svg)](https://pypi.python.org/pypi/geemap)
 [![image](https://img.shields.io/conda/vn/conda-forge/geemap.svg)](https://anaconda.org/conda-forge/geemap)
-[![image](https://pepy.tech/badge/geemap)](https://pepy.tech/project/geemap)
+[![image](https://static.pepy.tech/badge/geemap)](https://pepy.tech/project/geemap)
 [![image](https://github.com/gee-community/geemap/workflows/docs/badge.svg)](https://geemap.org)
 [![image](https://github.com/gee-community/geemap/workflows/build/badge.svg)](https://github.com/gee-community/geemap/actions?query=workflow%3Abuild)
 [![image](https://img.shields.io/badge/YouTube-Channel-red)](https://youtube.com/@giswqs)
@@ -25,6 +25,12 @@
 -   Free software: [MIT license](https://opensource.org/licenses/MIT)
 
 **Acknowledgment:** This material is based upon work supported by the National Aeronautics and Space Administration (NASA) under Grant No. 80NSSC22K1742 issued through the [Open Source Tools, Frameworks, and Libraries 2020 Program](https://bit.ly/3RVBRcQ).
+
+## Announcement
+
+The book _**Earth Engine and Geemap - Geospatial Data Science with Python**_, written by [Qiusheng Wu](https://gishub.org), has been published by Locate Press in July 2023. If you're interested in purchasing the book, please visit this URL: <https://locatepress.com/book/gee>.
+
+![book](https://images.geemap.org/book.png)
 
 ## Introduction
 
