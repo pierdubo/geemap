@@ -1,5 +1,175 @@
 # Changelog
 
+## v0.33.0 - July 14, 2024
+
+**What's Changed**
+
+-   Merge in 0.32 release branch by @naschmitz in [#1924](https://github.com/gee-community/geemap/pull/1924)
+-   Create releasing.md by @naschmitz in [#1925](https://github.com/gee-community/geemap/pull/1925)
+-   Update conda download links by @giswqs in [#1938](https://github.com/gee-community/geemap/pull/1938)
+-   Add Alaska workshop notebooks by @giswqs in [#1939](https://github.com/gee-community/geemap/pull/1939)
+-   [pre-commit.ci] pre-commit autoupdate by @pre-commit-ci in [#1946](https://github.com/gee-community/geemap/pull/1946)
+-   Update 50_cartoee_quickstart.ipynb by @osgeokr in [#1948](https://github.com/gee-community/geemap/pull/1948)
+-   Fix image collection vis bug by @giswqs in [#1953](https://github.com/gee-community/geemap/pull/1953)
+-   Add workshop notebook by @giswqs in [#1956](https://github.com/gee-community/geemap/pull/1956)
+-   Add workshop notebook for TNGIC 2024 by @giswqs in [#1964](https://github.com/gee-community/geemap/pull/1964)
+-   Fix folium add_raster bug by @giswqs in [#1966](https://github.com/gee-community/geemap/pull/1966)
+-   [pre-commit.ci] pre-commit autoupdate by @pre-commit-ci in [#1967](https://github.com/gee-community/geemap/pull/1967)
+-   [pre-commit.ci] pre-commit autoupdate by @pre-commit-ci in [#1971](https://github.com/gee-community/geemap/pull/1971)
+-   Added bug fixes and improvements to conversion.py by @SethNowac in [#1968](https://github.com/gee-community/geemap/pull/1968)
+-   Fix netcdf_to_ee bug by @giswqs in [#1973](https://github.com/gee-community/geemap/pull/1973)
+-   Fix unmasking issue in download_ee_image function by @lbferreira in [#1977](https://github.com/gee-community/geemap/pull/1977)
+-   Replace README.rst with README.md by @giswqs in [#1984](https://github.com/gee-community/geemap/pull/1984)
+-   overlay another layer in `get_image_collection_gif` function, solve #1993 by @iamtekson in [#1994](https://github.com/gee-community/geemap/pull/1994)
+-   [pre-commit.ci] pre-commit autoupdate by @pre-commit-ci in [#1998](https://github.com/gee-community/geemap/pull/1998)
+-   Update velocity notebook example by @giswqs in [#2006](https://github.com/gee-community/geemap/pull/2006)
+-   Add IGIC workshop notebook by @giswqs in [#2007](https://github.com/gee-community/geemap/pull/2007)
+-   Add Google map tiles by @giswqs in [#1963](https://github.com/gee-community/geemap/pull/1963)
+-   Fix solara app issue by @giswqs in [#2019](https://github.com/gee-community/geemap/pull/2019)
+-   [pre-commit.ci] pre-commit autoupdate by @pre-commit-ci in [#2021](https://github.com/gee-community/geemap/pull/2021)
+-   Swap lat lon for extract_values_to_points by @giswqs in [#2023](https://github.com/gee-community/geemap/pull/2023)
+-   Fix new typos discovered by codespell by @giswqs in [#2024](https://github.com/gee-community/geemap/pull/2024)
+-   Fix Colab authentication bug by @giswqs in [#2028](https://github.com/gee-community/geemap/pull/2028)
+-   Add a notebook example for using Google basemaps by @giswqs in [#2029](https://github.com/gee-community/geemap/pull/2029)
+-   Remove parameters to ee.Authenticate() to get the default Colab authentication experience by @sufyanAbbasi in [#2033](https://github.com/gee-community/geemap/pull/2033)
+-   Fail gracefully when Google Maps API key Colab secret isn't present by @naschmitz in [#2036](https://github.com/gee-community/geemap/pull/2036)
+-   Add layer loading spinner and remove layer button by @giswqs in [#1983](https://github.com/gee-community/geemap/pull/1983)
+-   Remove drawn features layer when geometries are cleared by @sufyanAbbasi in [#2038](https://github.com/gee-community/geemap/pull/2038)
+-   Default the layer manager to be opened on map initialization and other toolbar tweaks by @sufyanAbbasi in [#2039](https://github.com/gee-community/geemap/pull/2039)
+-   [core] Fix get_bounds behavior in core by @naschmitz in [#2012](https://github.com/gee-community/geemap/pull/2012)
+-   Add GDAL error handler by @giswqs in [#2045](https://github.com/gee-community/geemap/pull/2045)
+-   Add dependabot by @giswqs in [#2049](https://github.com/gee-community/geemap/pull/2049)
+-   Bump github/codeql-action from 2 to 3 by @dependabot in [#2050](https://github.com/gee-community/geemap/pull/2050)
+-   Bump nwtgck/actions-netlify from 2.0 to 3.0 by @dependabot in [#2051](https://github.com/gee-community/geemap/pull/2051)
+-   Bump docker/build-push-action from 5 to 6 by @dependabot in [#2052](https://github.com/gee-community/geemap/pull/2052)
+-   Bump actions/dependency-review-action from 2 to 4 by @dependabot in [#2053](https://github.com/gee-community/geemap/pull/2053)
+-   Bump docker/login-action from 2 to 3 by @dependabot in [#2054](https://github.com/gee-community/geemap/pull/2054)
+-   Improve download image function by @giswqs in [#2057](https://github.com/gee-community/geemap/pull/2057)
+-   add colorbar in get_image_collection_gif method. by @iamtekson in [#2059](https://github.com/gee-community/geemap/pull/2059)
+-   Consistent use of GOOGLE_MAPS_API_KEY by @jdbcode in [#2062](https://github.com/gee-community/geemap/pull/2062)
+-   Timeseries animation for precipitation dataset tutorial by @iamtekson in [#2060](https://github.com/gee-community/geemap/pull/2060)
+-   Add SciPy 2024 notebook by @giswqs in [#2065](https://github.com/gee-community/geemap/pull/2065)
+-   Add xarray_to_raster function by @giswqs in [#2072](https://github.com/gee-community/geemap/pull/2072)
+-   common.py: Add return type annotation of None to xarray_to_raster by @schwehr in [#2073](https://github.com/gee-community/geemap/pull/2073)
+-   Improve ee_to_df function by @giswqs in [#2074](https://github.com/gee-community/geemap/pull/2074)
+-   Fix draw control editing bug by @giswqs in [#2046](https://github.com/gee-community/geemap/pull/2046)
+-   Add SatMOC workshop notebook by @giswqs in [#2075](https://github.com/gee-community/geemap/pull/2075)
+
+**New Contributors**
+
+-   @pre-commit-ci made their first contribution in [#1946](https://github.com/gee-community/geemap/pull/1946)
+-   @SethNowac made their first contribution in [#1968](https://github.com/gee-community/geemap/pull/1968)
+-   @lbferreira made their first contribution in [#1977](https://github.com/gee-community/geemap/pull/1977)
+-   @iamtekson made their first contribution in [#1994](https://github.com/gee-community/geemap/pull/1994)
+-   @dependabot made their first contribution in [#2050](https://github.com/gee-community/geemap/pull/2050)
+
+**Full Changelog**: [v0.32.0...v0.33.0](https://github.com/gee-community/geemap/compare/v0.32.0...v0.33.0)
+
+## v0.32.1 - May 1, 2024
+
+**What's Changed**
+
+-   Pin ipyleaflet to `0.18.2` to work around an issue with ipyleaflet `0.19.0`.
+
+**Full Changelog**: [v0.32.0...v0.32.1-rc.1](https://github.com/gee-community/geemap/compare/v0.32.0...v0.32.1-rc.1)
+
+## v0.32.0 - Feb 28, 2024
+
+**What's Changed**
+
+-   Update changelog for v0.31.0 by @giswqs in [#1910](https://github.com/gee-community/geemap/pull/1910)
+-   chore: adding pre-commit configuration by @slowy07 in [#1912](https://github.com/gee-community/geemap/pull/1912)
+-   Add pre-commit cli by @giswqs in [#1914](https://github.com/gee-community/geemap/pull/1914)
+-   Add black-jupyter and nbstripout to pre-commit by @giswqs in [#1915](https://github.com/gee-community/geemap/pull/1915)
+-   Clean up notebook examples by @giswqs in [#1918](https://github.com/gee-community/geemap/pull/1918)
+
+**Full Changelog**: [v0.31.0...v0.32.0](https://github.com/gee-community/geemap/compare/v0.31.0...v0.32.0)
+
+## v0.31.0 - Feb 15, 2024
+
+**What's Changed**
+
+-   Update changelog by @giswqs in [#1880](https://github.com/gee-community/geemap/pull/1880)
+-   Fix JS-PY conversion bugs by @giswqs in [#1890](https://github.com/gee-community/geemap/pull/1890)
+-   Fix image_to_numpy error by @giswqs in [#1895](https://github.com/gee-community/geemap/pull/1895)
+-   Update GitHub Action versions by @giswqs in [#1896](https://github.com/gee-community/geemap/pull/1896)
+-   Update sample raster datasets by @giswqs in [#1904](https://github.com/gee-community/geemap/pull/1904)
+-   Update the Map.add_raster method by @giswqs in [#1909](https://github.com/gee-community/geemap/pull/1909)
+
+**Full Changelog**: [v0.30.4...v0.31.0](https://github.com/gee-community/geemap/compare/v0.30.4...v0.31.0)
+
+## v0.30.4 - Jan 12, 2024
+
+**What's Changed**
+
+-   Improve Colab authentication by @giswqs in [#1879](https://github.com/gee-community/geemap/pull/1879)
+
+**Full Changelog**: [v0.30.3...v0.30.4](https://github.com/gee-community/geemap/compare/v0.30.3...v0.30.4)
+
+## v0.30.3 - Jan 11, 2024
+
+**What's Changed**
+
+-   Add the build package by @giswqs in [#1875](https://github.com/gee-community/geemap/pull/1875)
+-   Update changelog by @giswqs in [#1876](https://github.com/gee-community/geemap/pull/1876)
+-   Fix Colab authentication issue by @giswqs in [#1877](https://github.com/gee-community/geemap/pull/1877)
+
+**Full Changelog**: [v0.30.2...v0.30.3](https://github.com/gee-community/geemap/compare/v0.30.2...v0.30.3)
+
+## v0.30.2 - Jan 10, 2024
+
+**What's Changed**
+
+-   Fix PyPI upload issue by @giswqs in [#1872](https://github.com/gee-community/geemap/pull/1872)
+-   Add missing files in wheel by @giswqs in [#1874](https://github.com/gee-community/geemap/pull/1874)
+
+**Full Changelog**: [v0.30.1...v0.30.2](https://github.com/gee-community/geemap/compare/v0.30.1...v0.30.2)
+
+## v0.30.1 - Jan 10, 2024
+
+**What's Changed**
+
+-   Update changelog for v0.30.0 by @giswqs in [#1862](https://github.com/gee-community/geemap/pull/1862)
+-   Use pyproject file for project metadata. by @naschmitz in [#1865](https://github.com/gee-community/geemap/pull/1865)
+-   Make consistent use of gdal by @giswqs in [#1867](https://github.com/gee-community/geemap/pull/1867)
+-   Temporal fix for notebook authenticate by @giswqs in [#1871](https://github.com/gee-community/geemap/pull/1871)
+
+**Full Changelog**: [v0.30.0...v0.30.1](https://github.com/gee-community/geemap/compare/v0.30.0...v0.30.1)
+
+## v0.30.0 - Dec 24, 2023
+
+**What's Changed**
+
+-   Update changelog for v0.29.6 by @giswqs in [#1840](https://github.com/gee-community/geemap/pull/1840)
+-   Update common.py by @tjlogue4 in [#1843](https://github.com/gee-community/geemap/pull/1843)
+-   Update data conversion functions by @giswqs in [#1849](https://github.com/gee-community/geemap/pull/1849)
+-   Update GitHub Actions to use Python 3.12 by @giswqs in [#1850](https://github.com/gee-community/geemap/pull/1850)
+-   Rename structured array variable to be self-describing by @jdbcode in [#1852](https://github.com/gee-community/geemap/pull/1852)
+-   Update zonal stats function by @giswqs in [#1854](https://github.com/gee-community/geemap/pull/1854)
+-   Add support for xee by @giswqs in [#1859](https://github.com/gee-community/geemap/pull/1859)
+-   Improve support for xee by @giswqs in [#1861](https://github.com/gee-community/geemap/pull/1861)
+
+**New Contributors**
+
+-   @tjlogue4 made their first contribution in [#1843](https://github.com/gee-community/geemap/pull/1843)
+
+**Full Changelog**: [v0.29.6...v0.30.0](https://github.com/gee-community/geemap/compare/v0.29.6...v0.30.0)
+
+## v0.29.6 - Nov 26, 2023
+
+**What's Changed**
+
+-   Update changelog for v0.29.5 by @giswqs in [#1820](https://github.com/gee-community/geemap/pull/1820)
+-   Add NCSU workshop notebook by @giswqs in [#1827](https://github.com/gee-community/geemap/pull/1827)
+-   Fix typo and deprecate plt.get_cmap function by @giswqs in [#1829](https://github.com/gee-community/geemap/pull/1829)
+-   common.py: typo fixes by @schwehr in [#1828](https://github.com/gee-community/geemap/pull/1828)
+-   Fix samgeo notebook bug by @giswqs in [#1835](https://github.com/gee-community/geemap/pull/1835)
+-   Improve js-py auto conversion by @giswqs in [#1836](https://github.com/gee-community/geemap/pull/1836)
+-   Add AGU workshop notebook by @giswqs in [#1837](https://github.com/gee-community/geemap/pull/1837)
+-   Add a step param to timelapse functions by @giswqs in [#1839](https://github.com/gee-community/geemap/pull/1839)
+
+**Full Changelog**: [v0.29.5...v0.29.6](https://github.com/gee-community/geemap/compare/v0.29.5...v0.29.6)
+
 ## v0.29.5 - Nov 3, 2023
 
 **What's Changed**

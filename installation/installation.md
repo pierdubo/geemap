@@ -19,7 +19,7 @@ pip install geemap
 ## Install from conda-forge
 
 **Geemap** is also available on [conda-forge](https://anaconda.org/conda-forge/geemap). If you have
-[Anaconda](https://www.anaconda.com/distribution/#download-section) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html) installed on your computer, you can install geemap using the following command:
+[Anaconda](https://www.anaconda.com/download) or [Miniconda](https://docs.anaconda.com/free/miniconda) installed on your computer, you can install geemap using the following command:
 
 ```bash
 conda install geemap -c conda-forge
@@ -28,28 +28,22 @@ conda install geemap -c conda-forge
 The geemap package has some optional dependencies, such as [GeoPandas](https://geopandas.org) and [localtileserver](https://github.com/banesullivan/localtileserver). These optional dependencies can be challenging to install on some computers, especially Windows. It is highly recommended that you create a fresh conda environment to install geemap. Follow the commands below to set up a conda env and install geemap:
 
 ```bash
-conda create -n gee python=3.10
+conda create -n gee python=3.11
 conda activate gee
 conda install -n base mamba -c conda-forge
 mamba install geemap -c conda-forge
 mamba install geopandas localtileserver -c conda-forge
 ```
 
-All the optional dependencies are listed in [requirements_all.txt](https://github.com/gee-community/geemap/blob/master/requirements_all.txt), which can be installed using one of the following:
+The optional dependencies can be installed using one of the following:
 
--   `pip install geemap[all]`: installing all optional dependencies listed in [requirements_all.txt](https://github.com/gee-community/geemap/blob/master/requirements_all.txt).
+-   `pip install geemap[all]`: installing all optional dependencies.
 -   `pip install geemap[backends]`: installing keplergl, pydeck.
 -   `pip install geemap[lidar]`: installing ipygany, ipyvtklink, laspy, panel, pyntcloud[LAS], pyvista.
 -   `pip install geemap[raster]`: installing localtileserver, rio-cogeo, rioxarray, netcdf4, xarray_leaflet.
 -   `pip install geemap[sql]`: installing psycopg2, sqlalchemy.
 -   `pip install geemap[streamlit]`: installing streamlit-folium.
 -   `pip install geemap[vector]`: installing geopandas, osmnx.
-
-Optionally, you can install some [Jupyter notebook extensions](https://github.com/ipython-contrib/jupyter_contrib_nbextensions), which can improve your productivity in the notebook environment. Some useful extensions include Table of Contents, Gist-it, Autopep8, Variable Inspector, etc. See this [post](https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231) for more information.
-
-```bash
-conda install jupyter_contrib_nbextensions -c conda-forge
-```
 
 Check the **YouTube** video below on how to install geemap using conda.
 
